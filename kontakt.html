@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&K Schoonmaakbedrijf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header .banner {
+          display: flex;
+          align-items: center;
+          background-color: #b3e5fc;
+          padding: 10px;
+          color: black;
+          font-size: 14px;
+
+        }
+
+
+        header .banner .logo {
+          width: 100px;
+          margin-right: 15px;
+
+        }
+        language-selector {
+          display: flex;
+          justify-content: center;
+          background-color: #b3e5fc;
+          padding: 10px;
+        }
+
+        .language-selector button {
+          margin: 0 5px;
+          padding: 5px 10px;
+          background-color: #01579b;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        language-selector button:hover {
+          background-color: #0288d1;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 140px);
+            background-color: #b3e5fc;
+        }
+        
+
+
+        nav {
+            background-color: #01579b;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .service {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .service img {
+            width: 50%;
+            height: auto;
+        }
+        .service h3 {
+            margin: 15px;
+        }
+        .service p {
+            margin: 15px;
+            color: #555;
+        }
+        nav {
+            background-color: #01579b;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #e1f5fe;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+
+        }
+        .content-box {
+            background: #b3e5fc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            max-width: 800px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+  <header>
+      <div class="banner">
+          <img src="logo3.png" alt="Logo firmy" class="logo">
+          <h1>J&K Schoonmaakbedrijf</h1>
+      </div>
+  </header>
+
+    <nav>
+      <a href="index.html" data-i18n="strona_glowna">Startpagina</a>
+      <a href="oferta.html" data-i18n="oferta1">Aanbod</a>
+      <a href="o_nas.html" data-i18n="o_nas">Over Ons</a>
+      <a href="kontakt.html" data-i18n="kontakt">Contact</a>
+    </nav>
+
+    <nav class="language-selector">
+       <button onclick="changeLanguage('pl')">Polski</button>
+       <button onclick="changeLanguage('en')">English</button>
+       <button onclick="changeLanguage('nl')">Nederlands</button>
+       <button onclick="changeLanguage('uk')">Ukrainski</button>
+   </nav>
+
+    <main>
+      <section class="content-box">
+      <h2 data-i18n="contact_title">Contact</h2>
+      <p>Email: info.jkschoonmaakbedijf@gmail.com</p>
+      <p>Telefon: +31 6 14 16 64 44 , +31 6 39 61 46 79 </p>
+      </section>
+    </main>
+
+
+    <script type="text/javascript">
+    const translations = {
+  pl: {
+      company_name: "Nazwa Firmy",
+      services_title: "Nasze Usługi",
+      service_homes: "🏠Sprzątanie domów i mieszkań",
+      service_offices: "🏢Sprzątanie biur",
+      service_hotels: "🏨Sprzątanie hoteli",
+      service_schools: "🏫Sprzątanie szkół",
+      service_training: "🎓Przeszkolenia",
+      offer_title: "Oferta",
+      offer_hours: "🕒Elastyczne godziny pracy",
+      offer_quality: "✨Wysoka jakość czyszczenia",
+      offer_vacuum: "🧹Odkurzanie",
+      offer_dusting: "🧽Wycieranie kurzu",
+      offer_bathrooms: "🚿Sprzątanie łazienek",
+      offer_ironing: "🧺Prasowanie",
+      locations_title: "Obsługiwane miejscowości📍",
+      locations_list: "Haarlem, Bloemendaal, Beverwijk, Overveen, Aardenhout, Amsterdam, Ijumiden, Heemskerk, Hoofddorp, Castricum",
+      experience_title: "Nasze doświadczenie",
+      experience_years: "Nasza firma ma 10 lat doświadczenia!",
+      experience_clients: "Obecnie obsługujemy ponad 500 zadowolonych klientów!",
+      about_us: "O nas",
+      contact_title: "Kontakt",
+      o_nas:"O Nas",
+      kontakt:"Kontakt",
+      oferta1:"Oferta",
+      strona_glowna: "Strona Główna",
+      opiss:"Jesteśmy rodziną firmą sprzątającą, prosperującą juz ponad 10 lat na rynku. Oferujemy państwu wyskojej jakości usługi sprzatajace powierzchni płaskich Nie boimy się wyzwań.Chętnie podejmujemy współpracę z biurami, hotelami, siłowniami, ośrodkami miejskimi oraz z prywatnymi domami. Wysoka jakść wykonywanej przez nas pracy, elastycznosc, wieloletnie doświadczenie, stały kontakt z klientem to nasze głowne cechy które sprawiają że nasi kontrachenci wybierją właśnie nas. Naszym najważniejszym celem jest państwa zadowolenie przetlumacz na angielski ",
+
+  },
+  en: {
+      company_name: "Company Name",
+      services_title: "Our Services",
+      service_homes: "🏠Home and Apartment Cleaning",
+      service_offices: "🏢Office Cleaning",
+      service_hotels: "🏨Hotel Cleaning",
+      service_schools: "🏫School Cleaning",
+      service_training: "🎓Training",
+      offer_title: "Offer",
+      offer_hours: "🕒Flexible Working Hours",
+      offer_quality: "✨High Cleaning Quality",
+      offer_vacuum: "🧹Vacuuming",
+      offer_dusting: "🧽Dusting",
+      offer_bathrooms: "🚿Bathroom Cleaning",
+      offer_ironing: "🧺Ironing",
+      locations_title: "Locations Served📍",
+      locations_list: "Haarlem, Bloemendaal, Beverwijk, Overveen, Aardenhout, Amsterdam, Ijumiden, Heemskerk, Hoofddorp, Castricum",
+      experience_title: "Our Experience",
+      experience_years: "Our company has 10 years of experience!",
+      experience_clients: "We currently serve over 500 satisfied clients!",
+      about_us: "About us",
+      contact_title: "Contact",
+      o_nas:"About Us",
+      kontakt:"Contact",
+      oferta1:"Offer",
+      strona_glowna: "Home Page",
+      opiss:"We are a familyowned cleaning company that has been operating in the market for over 10 yearsWe offer high-quality cleaning services for flat surfaces. We are not afraid of challenges.We are happy to cooperate with offices, hotels, gyms, municipal centers, and private homes.The high quality of our work, flexibility, many years of experience, and constant communication with clients are the main qualities that make our contractors choose us.Our most important goal is your satisfaction."
+
+  },
+  nl: {
+      company_name: "Bedrijfsnaam",
+      services_title: "Onze Diensten",
+      service_homes: "🏠 Huizen en Appartementen Schoonmaak",
+      service_offices: "🏢 Kantoren Schoonmaak",
+      service_hotels: "🏨 Hotels Schoonmaak",
+      service_schools: "🏫 Scholen Schoonmaak",
+      service_training: "🎓 Training",
+      offer_title: "Aanbod",
+      offer_hours: "🕒 Flexibele Werkuren",
+      offer_quality: "✨ Hoge Schoonmaakkwaliteit",
+      offer_vacuum: "🧹 Stofzuigen",
+      offer_dusting: "🧽 Stoffen",
+      offer_bathrooms: "🚿 Badkamers Schoonmaken",
+      offer_ironing: "🧺 Strijken",
+      locations_title: "Geserveerde Locaties📍",
+      locations_list: "Haarlem, Bloemendaal, Beverwijk, Overveen, Aardenhout, Amsterdam, Ijumiden, Heemskerk, Hoofddorp, Castricum",
+      experience_title: "Onze Ervaring",
+      experience_years: "Ons bedrijf heeft 10 jaar ervaring!",
+      experience_clients: "We bedienen momenteel meer dan 500 tevreden klanten!",
+      about_us: "Over ons",
+      contact_title: "Contact",
+      o_nas:"Over Ons",
+      kontakt:"Contact",
+      oferta1:"Aanbod",
+      strona_glowna: "Startpagina",
+      opiss:"Wij zijn een familiebedrijf in de schoonmaakindustrie, dat al meer dan 10 jaar actief is op de markt.Wij bieden hoogwaardige schoonmaakdiensten voor vlakke oppervlakken. We zijn niet bang voor uitdagingen.We werken graag samen met kantoren, hotels, sportscholen, gemeentelijke centra en particuliere woningen.De hoge kwaliteit van ons werk, flexibiliteit, jarenlange ervaring en constante communicatie met klanten zijn de belangrijkste eigenschappen die onze opdrachtgevers voor ons kiezen.Ons belangrijkste doel is uw tevredenheid."
+  },
+  uk:{
+    company_name: "Nazwa Firmy",
+    services_title: "Наші послуги",
+    service_homes: "🏠Прибирання будинків і квартир",
+    service_offices: "🏢Прибирання офісів",
+    service_hotels: "🏨Прибирання готелів",
+    service_schools: "🏫Прибирання шкіл",
+    service_training: "🎓Навчання",
+    offer_title: "Пропозиція",
+    offer_hours: "🕒Гнучкі години роботи",
+    offer_quality: "✨Висока якість прибирання",
+    offer_vacuum: "🧹Пилососіння",
+    offer_dusting: "🧽Витирання пилу",
+    offer_bathrooms: "🚿Прибирання ванних кімнат",
+    offer_ironing: "🧺Прасування",
+    locations_title: "Обслуговувані населені пунктиi📍",
+    locations_list: "Haarlem, Bloemendaal, Beverwijk, Overveen, Aardenhout, Amsterdam, Ijumiden, Heemskerk, Hoofddorp, Castricum",
+    experience_title: "Наш досвід",
+    experience_years: "Наша компанія має 10 років досвіду!",
+    experience_clients: "Наразі ми обслуговуємо понад 500 задоволених клієнтів!",
+    about_us: "Про нас",
+    contact_title: "контакт",
+    o_nas:"Про нас",
+    kontakt:"Контакт",
+    oferta1:"пропозиція",
+    strona_glowna:"Головна сторінка",
+    opiss:"Ми - сімейна компанія з прибирання, яка працює на ринку понад 10 років.Ми надаємо високоякісні послуги з прибирання плоских поверхонь. Нам не страшні виклики.Ми раді співпрацювати з офісами, готелями, спортзалами, муніципальними центрами та приватними будинками.Висока якість нашої роботи, гнучкість, багаторічний досвід і постійна комунікація з клієнтами - це основні характеристики, які змушують наших підрядників обирати нас.Наша найважливіша мета - ваша задоволеність."
+  }
+};
+
+function changeLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      el.textContent = translations[lang][key];
+  });
+}
+
+    </script>
+</body>
+</html>

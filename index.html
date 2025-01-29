@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&K Schoonmaakbedrijf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header .banner {
+          display: flex;
+          align-items: center;
+          background-color: #b3e5fc;
+          padding: 10px;
+          color: black;
+          font-size: 14px;
+
+
+        }
+
+
+        }
+        header img{
+          width: 100px;
+        }
+
+        header .banner .logo {
+          width: 100px;
+          margin-right: 15px;
+
+        }
+        language-selector {
+          display: flex;
+          justify-content: center;
+          background-color: #b3e5fc;
+          padding: 10px;
+        }
+
+        .language-selector button {
+          margin: 0 5px;
+          padding: 5px 10px;
+          background-color: #01579b;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        language-selector button:hover {
+          background-color: #0288d1;
+        }
+
+        main {
+            display: block;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 20px;
+            background-color: #b3e5fc;
+            text-align: center;
+
+        }
+
+        main img {
+
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            text-align: center;
+            align-items: center;
+
+
+        }
+        main section ul {
+          list-style: none;
+
+        }
+
+        main section ul li {
+          text-align: center;
+        }
+
+        main section ul li{
+          display: block;
+          margin: 10 auto 10px;
+
+        }
+
+        .dlaczegomy p h3{
+          text-align: center;
+          font-weight: bold;
+        }
+
+        }
+
+        nav {
+            background-color: #01579b;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .service {
+            border: 1px solid #b3e5fc;
+            border-radius: 8px;
+
+            text-align: center;
+            align-items: center;
+            background-color: #b3e5fc;
+            align-items: center;
+        }
+        .service img {
+            width: 50%;
+            height: auto;
+            align-items: center;
+        }
+        .service h3 {
+            margin: 15px;
+            text-align: center;
+            align-items: center;
+        }
+        .service p {
+            margin: 15px;
+            color: #555;
+            text-align: center;
+            align-items: center;
+        }
+        nav {
+            background-color: #01579b;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #e1f5fe;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+
+        }
+    </style>
+</head>
+<body>
+  <header>
+      <div class="banner">
+          <img src="logo3.png" alt="Logo firmy" class="logo">
+          <h1>J&K Schoonmaakbedrijf</h1>
+      </div>
+  </header>
+
+    <nav>
+      <a href="index.html" data-i18n="strona_glowna">Startpagina</a>
+      <a href="oferta.html" data-i18n="oferta1">Aanbod</a>
+      <a href="o_nas.html" data-i18n="o_nas">Over Ons</a>
+      <a href="kontakt.html" data-i18n="kontakt">Contact</a>
+    </nav>
+
+    <nav class="language-selector">
+       <button onclick="changeLanguage('pl')">Polski</button>
+       <button onclick="changeLanguage('en')">English</button>
+       <button onclick="changeLanguage('nl')">Nederlands</button>
+       <button onclick="changeLanguage('uk')">Ukrainski</button>
+   </nav>
+
+    <main>
+        <section class="dlaczegomy">
+          <h1 data-i18n="dlaczegomy1">Waarom wij?</h1>
+            <p data-i18n="opis1">Heeft u professionele schoonmaak nodig voor uw woning of kantoor? Dan ben je bij ons aan het juiste adres! Schoonmaken is geen gemakkelijke taak, en kwalitatief hoogstaand schoonmaken is zelfs nog moeilijker! Gelukkig kunt u erop vertrouwen dat wij al het vuile werk opknappen. Wij zijn een team van professionele schoonmakers die er alles aan doen om uw huis of kantoor netjes en schoon te houden. Wij werken snel, professioneel en benaderen elke opdracht individueel. Bij ons zult u zeker blij zijn met het effect. Wij garanderen een werkelijk hoge kwaliteit van de dienstverlening. Ook in het weekend zijn wij bereikbaar en komt onze specialist bij u langs op een voor u geschikt tijdstip.</p>
+              <h1 data-i18n="dlaczegomy2">Wat maakt ons uniek?</h1>
+                <ul>
+                  <li data-i18n="opis2">Professionaliteit en ervaring – Al jaren bieden wij schoonmaakdiensten aan in diverse gebouwen, met oog voor elk detail.</li><br>
+                  <li data-i18n="opis3">Familiekarakter van het bedrijf – Dankzij nauwe klantrelaties en flexibiliteit passen wij onze diensten aan op individuele behoeften.</li><br>
+                  <li data-i18n="opis0">Stiptheid en betrouwbaarheid – Wij zorgen ervoor dat elke ruimte perfect schoon is, altijd op tijd.</li><br>
+                </ul>
+                <h1 data-i18n="dlaczegomy3">Wij bieden:</h1>
+                <ul>
+                  <li data-i18n="opis4">Schoonmaak van kantoren en commerciële ruimtes</li><br>
+                    <li data-i18n="opis5">Onderhoud van netheid in kinderdagverblijven en onderwijsinstellingen</li><br>
+                    <li data-i18n="opis6">Schoonmaakdiensten voor kantoren en overheidsinstellingen</li><br>
+                      <li data-i18n="opis7">Reiniging van vlakke oppervlakken in sportscholen en sportfaciliteiten</li><br>
+                      <li data-i18n="opis8">Regelmatige schoonmaak in particuliere woningen</li><br>
+                        <li data-i18n="opis9">Onderhoud van netheid in hotels, pensions en accommodaties</li><br>
+                </ul>
+                <h1 data-i18n="dlaczegomy4">Waarom voor ons kiezen?</h1>
+                  <ul>
+                    <li data-i18n="opis10">Professionele service en hoge kwaliteit</li><br>
+                    <li data-i18n="opis11">Concurrerende prijzen en transparante aanbiedingen</li><br>
+                    <li data-i18n="opis12">Individuele benadering van klanten</li><br>
+                    <li data-i18n="opis13">Flexibiliteit in het plannen van schoonmaakdiensten</li><br>
+                  </ul>
+                  <h1 data-i18n="dlaczegomy5">Laat ons voor de netheid zorgen, zodat jij je kunt concentreren op wat echt belangrijk is!</h1>
+        </section>
+
+
+      <section class="services">
+        <div class="service">
+            <img src="domy.jpg" alt="Sprzątanie domów i mieszkau">
+            <h3 data-i18n="service_homes">Huizen en Appartementen
+              Schoonmaak</h3>
+
+        </div>
+          <div class="service">
+              <img src="biura.jpg" alt="Sprzątanie biur">
+              <h3 data-i18n="service_offices">Kantoren Schoonmaak</h3>
+
+          </div>
+
+          <div class="service">
+              <img src="hotel.jpg" alt="Sprzątanie hoteli">
+              <h3 ddata-i18n="service_hotel1">Hotels Schoonmaak</h3>
+
+          <div class="service">
+              <img src="silownia.jpg" alt="Sprzątanie silowni">
+              <h3 ddata-i18n="service_gym1">Sportschool Schoonmaak </h3>
+
+          <div class="service">
+              <img src="szkola.jpg" alt="Sprzątanie szkół">
+              <h3 data-i18n="service_schools">Scholen Schoonmaak</h3>
+          </div>
+          <div class="service">
+              <img src="przedszkole.jpg" alt="Przedczkola">
+              <h3 data-i18n="service_training">Kleuterschool Schoonmaak</h3>
+          </div>
+      </section>
+    </main>
+
+    <script type="text/javascript">
+    const translations = {
+  pl: {
+      services_title: "Nasze Usługi",
+      service_homes: "Sprzątanie domów i mieszkań",
+      service_offices: "Sprzątanie biur",
+      service_hotel1: "Sprzątanie hoteli",
+      service_schools: "Sprzątanie szkół",
+      service_training: "Sprzątanie przedszkoli",
+      offer_title: "Oferta",
+      about_us: "O nas",
+      contact_title: "Kontakt",
+      o_nas:"O Nas",
+      kontakt:"Kontakt",
+      oferta1:"Oferta",
+      strona_glowna: "Strona Główna",
+      duze1:"Duże doświadczenie",
+      Profesjonalneq:"Profesjonalna ekipa sprzątająca",
+      elastyczne:"Elastyczne godziny pracy",
+      dlaczegomy1:"Dlaczego my?",
+      service_gym1:"Sprzątanie siłowni",
+      opis1:"Czy potrzebujesz profesjonalnego sprzątania domu lub biura? Jeśli tak, to trafiłeś we właściwe miejsce! Sprzątanie to niełatwe zadanie, a sprzątanie wysokiej jakości – tym bardziej! Na szczęście możesz nam powierzyć każdą „brudną robotę”. Jesteśmy zespołem profesjonalnych sprzątaczy, którzy robią wszystko, aby w Twoim domu lub biurze panował porządek i czystość. Działamy szybko, profesjonalnie i podchodzimy indywidualnie do każdego zlecenia. Z nami na pewno będziesz zadowolony z efektu. Gwarantujemy naprawdę wysokiej jakości usługę, świadczymy usługi również w weekendy, a nasz specjalista przyjdzie w dogodnym dla Ciebie czasie.",
+      dlaczegomy2:"Co nas wyróżnia?",
+        opis2:"Profesjonalizm i doświadczenie – od lat świadczymy usługi sprzątania w różnych obiektach, z dbałością o każdy detal.",
+          opis3:"Rodzinny charakter firmy – dzięki bliskim relacjom z klientami oraz elastyczności, dostosowujemy nasze usługi do indywidualnych potrzeb.",
+          opis0:"Terminowość i rzetelność – dbamy o to, by każda przestrzeń była perfekcyjnie czysta, zawsze na czas.",
+        dlaczegomy3:"Oferujemy",
+      opis4:"Sprzątanie biur i przestrzeni komercyjnych",
+          opis5:"Utrzymanie czystości w przedszkolach i placówkach edukacyjnych",
+            opis6:"Usługi sprzątania dla urzędów i instytucji publicznych",
+            opis7:"Czyszczenie powierzchni płaskich w siłowniach i obiektach sportowych",
+              opis8:"Regularne sprzątanie w domach prywatnych",
+                opis9:"Utrzymanie czystości w hotelach, pensjonatach i obiektach noclegowych",
+        dlaczegomy4:"Dlaczego warto nas wybrać?",
+            opis10:"Profesjonalna obsługa i wysoka jakość usług",
+            opis11:"Konkurencyjne ceny i transparentność oferty",
+            opis12:"Indywidualne podejście do klienta",
+            opis13:"Elastyczność w dopasowaniu harmonogramu sprzątania",
+          dlaczegomy5:"Pozwól nam zająć się czystością, a Ty skoncentruj się na tym, co najważniejsze!",
+  },
+  en: {
+      company_name: "Company Name",
+      services_title: "Our Services",
+      service_homes: "Home and Apartment Cleaning",
+      service_offices: "Office Cleaning",
+      service_hotel1: "Hotel Cleaning",
+      service_gym1:"Gym Cleaning",
+      service_schools: "School Cleaning",
+      service_training: "Kindergarten Cleaning",
+      offer_title: "Offer",
+      about_us: "About us",
+      contact_title: "Contact",
+      o_nas:"About Us",
+      kontakt:"Contact",
+      oferta1:"Offer",
+      strona_glowna: "Home Page",
+      duze1:"Extensive experience",
+      Profesjonalneq:"Professional cleaning team",
+      elastyczne:"Flexible working hours",
+      dlaczegomy1:"Why us?",
+      opis1:"Do you need professional cleaning for your home or office? If so, you've come to the right place! Cleaning is not an easy task, and quality cleaning is even more difficult! Fortunately, you can entrust any dirty work to us. We are a team of professional cleaners who will do everything to keep your home or office tidy and clean. We work quickly, professionally and approach each order individually. With us, you will definitely be satisfied with the effect. We guarantee really high quality of services, we also provide services on weekends, and our specialist will arrive at a time convenient for you.",
+      dlaczegomy2:"What makes us stand out?",
+        opis2:"Professionalism and experience – For years, we have been providing cleaning services in various facilities, paying attention to every detail.",
+          opis3:"Family character of the company – Thanks to close relationships with clients and flexibility, we tailor our services to individual needs.",
+          opis0:"Punctuality and reliability – We ensure that every space is perfectly clean, always on time.",
+        dlaczegomy3:"We offer:",
+      opis4:"Cleaning of offices and commercial spaces",
+          opis5:"Maintaining cleanliness in kindergartens and educational institutions",
+            opis6:"Cleaning services for offices and public institutions",
+            opis7:"Cleaning flat surfaces in gyms and sports facilities",
+              opis8:"Regular cleaning in private homes",
+                opis9:"Maintaining cleanliness in hotels, guesthouses, and accommodation facilities",
+        dlaczegomy4:"Why choose us?",
+            opis10:"Professional service and high-quality standards",
+            opis11:"Competitive prices and transparent offers",
+            opis12:"Individual approach to clients",
+            opis13:"Flexibility in scheduling cleaning services",
+          dlaczegomy5:"Let us take care of cleanliness so you can focus on what really matters!",
+  },
+  nl: {
+      company_name: "Bedrijfsnaam",
+      services_title: "Onze Diensten",
+      service_homes: "Huizen en Appartementen Schoonmaak",
+      service_offices: "Kantoren Schoonmaak",
+      service_hotel1: "Hotels Schoonmaak",
+      service_schools: "Scholen Schoonmaak",
+      service_training: "Kleuterschool Schoonmaak",
+      service_gym1:"Sportschool Schoonmaak",
+      offer_title: "Aanbod",
+      about_us: "Over ons",
+      contact_title: "Contact",
+      o_nas:"Over Ons",
+      kontakt:"Contact",
+      oferta1:"Aanbod",
+      strona_glowna: "Startpagina",
+      duze1:"Grote ervaring",
+      Profesjonalneq:"Professioneel schoonmaakteam",
+      elastyczne:"Flexibele werktijden",
+      dlaczegomy1:"Waarom wij?",
+      opis1:"Heeft u professionele schoonmaak nodig voor uw woning of kantoor? Dan ben je bij ons aan het juiste adres! Schoonmaken is geen gemakkelijke taak, en kwalitatief hoogstaand schoonmaken is zelfs nog moeilijker! Gelukkig kunt u erop vertrouwen dat wij al het vuile werk opknappen. Wij zijn een team van professionele schoonmakers die er alles aan doen om uw huis of kantoor netjes en schoon te houden. Wij werken snel, professioneel en benaderen elke opdracht individueel. Bij ons zult u zeker blij zijn met het effect. Wij garanderen een werkelijk hoge kwaliteit van de dienstverlening. Ook in het weekend zijn wij bereikbaar en komt onze specialist bij u langs op een voor u geschikt tijdstip.",
+      dlaczegomy2:"Wat maakt ons uniek?",
+        opis2:"Professionaliteit en ervaring – Al jaren bieden wij schoonmaakdiensten aan in diverse gebouwen, met oog voor elk detail.",
+          opis3:"Familiekarakter van het bedrijf – Dankzij nauwe klantrelaties en flexibiliteit passen wij onze diensten aan op individuele behoeften.",
+          opis0:"Stiptheid en betrouwbaarheid – Wij zorgen ervoor dat elke ruimte perfect schoon is, altijd op tijd.",
+        dlaczegomy3:"Wij bieden",
+      opis4:"Schoonmaak van kantoren en commerciële ruimtes",
+          opis5:"Onderhoud van netheid in kinderdagverblijven en onderwijsinstellingen",
+            opis6:"Schoonmaakdiensten voor kantoren en overheidsinstellingen",
+            opis7:"Reiniging van vlakke oppervlakken in sportscholen en sportfaciliteiten",
+              opis8:"Regelmatige schoonmaak in particuliere woningen",
+                opis9:"Onderhoud van netheid in hotels, pensions en accommodaties",
+        dlaczegomy4:"Waarom voor ons kiezen?",
+            opis10:"Professionele service en hoge kwaliteit",
+            opis11:"Concurrerende prijzen en transparante aanbiedingen",
+            opis12:"Individuele benadering van klanten",
+            opis13:"Flexibiliteit in het plannen van schoonmaakdiensten",
+          dlaczegomy5:"Laat ons voor de netheid zorgen, zodat jij je kunt concentreren op wat echt belangrijk is!",
+
+  },
+  uk:{
+    company_name: "Nazwa Firmy",
+    services_title: "Наші послуги",
+    service_homes: "Прибирання будинків і квартир",
+    service_offices: "Прибирання офісів",
+    service_hotel1: "Прибирання готелів",
+    service_schools: "Прибирання шкіл",
+    service_training: "Навчання",
+    service_gym1:"Спортзал",
+    about_us: "Про нас",
+    contact_title: "контакт",
+    o_nas:"Про нас",
+    kontakt:"Контакт",
+    oferta1:"пропозиція",
+    strona_glowna:"Головна сторінка",
+    duze1:"Великий досвід",
+    Profesjonalneq:"Професійна команда з прибирання",
+    elastyczne:"Гнучкий графік роботи",
+    dlaczegomy1:"Чому ми?",
+    opis1:"Вам потрібне професійне прибирання будинку чи офісу? Якщо так, то ми саме те, що Вам потрібно! Прибирання – справа непроста, а якісне прибирання – тим більше! На щастя, ви можете довірити нам будь-яку складну роботу - ми впораємося. Ми команда професійного клінінгу, яка робить все, щоб ваш будинок або офіс був охайним і чистим. Працюємо швидко, професійно та індивідуально підходимо до кожного замовлення. З нами ви точно залишитеся задоволені результатом. Ми гарантуємо якісний сервіс, надаємо послуги і у вихідні дні, а наш спеціаліст приїде у зручний для вас час.",
+    dlaczegomy2:"Що нас відрізняє?",
+      opis2:"Професіоналізм і досвід – протягом багатьох років ми надаємо послуги з прибирання різних об'єктів, приділяючи увагу кожній деталі.",
+        opis3:"Сімейний характер компанії – завдяки тісним відносинам із клієнтами та гнучкості, ми адаптуємо наші послуги до індивідуальних потреб.",
+        opis0:"Пунктуальність і надійність – ми гарантуємо, що кожен простір буде ідеально чистим і завжди вчасно.",
+      dlaczegomy3:"Ми пропонуємо",
+    opis4:"Прибирання офісів та комерційних приміщень",
+        opis5:"Підтримання чистоти в дитячих садках та навчальних закладах",
+          opis6:"Прибирання державних установ та офісів",
+          opis7:"Очищення поверхонь у спортзалах та спортивних комплексах",
+            opis8:"Регулярне прибирання приватних будинків",
+              opis9:"Підтримання чистоти в готелях, пансіонах та житлових об'єктах",
+      dlaczegomy4:"Чому варто обрати нас?",
+          opis10:"Професійне обслуговування та висока якість послуг",
+          opis11:"Конкурентні ціни та прозорі пропозиції",
+          opis12:"Індивідуальний підхід до клієнтів",
+          opis13:"Гнучкість у плануванні графіку прибирання",
+        dlaczegomy5:"Довірте нам турботу про чистоту, а ви зможете зосередитися на найважливішому!",
+}
+};
+
+function changeLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      el.textContent = translations[lang][key];
+  });
+}
+
+    </script>
+</body>
+</html>
